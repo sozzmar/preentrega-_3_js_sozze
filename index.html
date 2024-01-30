@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo1" id="logo">
+            <img src="images/gatitoceramica.jpg" alt="logo">
+                   </div>
+       
+        <nav>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section id="productos">
+        <!-- productos -->
+        <div class="producto" id="producto1">
+            <h2>Cucharas</h2>
+            <img src="images/cucharas.jpg" alt="Producto 1">
+            <p>Precio: $200.00</p>
+            <button onclick="agregarAlCarrito('Producto 1', 200.00)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" id="producto2">
+            <h2>Cuenco</h2>
+            <img src="images/cuenco2.jpg" alt="Producto 2">
+            <p>Precio: $1000.00</p>
+            <button onclick="agregarAlCarrito('Producto 2', 1000.00)">Agregar al carrito</button>
+        </div> 
+
+        <div class="producto" id="producto3">
+            <h2>Fanal</h2>
+            <img src="images/fanal.jpg" alt="Producto 3">
+            <p>Precio: $1500.00</p>
+            <button onclick="agregarAlCarrito('Producto 3', 1500.00)">Agregar al carrito</button>
+        </div> 
+
+        <div class="producto" id="producto4">
+            <h2>Hornillos</h2>
+            <img src="images/hornillos.jpg" alt="Producto 4">
+            <p>Precio: $2000.00</p>
+            <button onclick="agregarAlCarrito('Producto 4', 2000.00)">Agregar al carrito</button>
+        </div> 
+
+        <div class="producto" id="producto5">
+            <h2>Tazas</h2>
+            <img src="images/juegodetazas.jpg" alt="Producto 5">
+            <p>Precio: $2000.00</p>
+            <button onclick="agregarAlCarrito('Producto 5', 2000.00)">Agregar al carrito</button>
+        </div> 
+
+        <div class="producto" id="producto6">
+            <h2>Plato para sushi</h2>
+            <img src="images/sushi.jpg" alt="Producto 6">
+            <p>Precio: $2500.00</p>
+            <button onclick="agregarAlCarrito('Producto 6', 2500.00)">Agregar al carrito</button>
+        </div> 
+        
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito">
+            <!-- productos agregados al carrito -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
